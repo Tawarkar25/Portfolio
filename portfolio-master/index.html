@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="assets/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/462f713e0d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="assets/nameLogo.png" alt="Name Logo" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Software Developer</p>
+        <h1>
+          Hi, I'm <span>Prathamesh</span><br />
+          Varale from Kolhapur
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!--About Section-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="assets/edit.JPG" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I'm a passionate and recently graduated web developer with a
+            B.Tech in Computer Science from Dr. Babasaheb Ambedkar
+            Technological University. During my academic journey, I've gained
+            extensive knowledge and practical experience in web development,
+            including HTML, CSS, Bootstrap, JavaScript, React js. , SQL, PHP,
+            and the Laravel Framework. My enthusiasm for creating dynamic and
+            user-friendly web applications drives me to explore new
+            technologies and design innovative solutions. I thrive in
+            collaborative environments and am always eager to take on new
+            challenges. Outside of coding, I enjoy staying up-to-date with the
+            latest tech trends, contributing to open-source projects, and
+            continuously expanding my skill set. I'm excited to bring my
+            expertise to new projects and opportunities. Let's connect and
+            build something great together
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Web Development</span><br />HTML, CSS, Bootstrap, React
+                js.
+              </li>
+              <li>
+                <span>Scripting Languages</span><br />Javascript, PHP, Node
+                js.
+              </li>
+              <li><span>Programming Langauges</span><br />C, Java</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>March 2023 - Present</span><br />Intern at
+                Sparklabitsolutions
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023</span><br />B.Tech at SITCOE, Yadrav</li>
+              <li>
+                <span>2019</span><br />HSC at Sharad Science and Commerce
+                College, Yadrav
+              </li>
+              <li>
+                <span>2017</span><br />SSLC Govt. High School, Manakapur
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Services-->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>
+            I am a seasoned web application developer with a proven track
+            record of designing and building dynamic and user-friendly web
+            solutions. My passion for web development, coupled with my
+            technical expertise, enables me to create web applications that
+            meet and exceed client and user expectations.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>
+            As an app designer, I specialize in creating visually captivating
+            and intuitive mobile applications. With a keen eye for user
+            experience (UX) and user interface (UI) design, I craft engaging
+            interfaces that enhance user interaction. Proficient in design
+            tools like Adobe XD and Figma, I ensure seamless navigation and
+            pixel-perfect designs. My commitment to staying updated with the
+            latest design trends allows me to create contemporary and
+            aesthetically pleasing app layouts. With a portfolio of successful
+            app designs, I'm dedicated to delivering user-centered designs
+            that enhance the functionality and appeal of every mobile app
+            project.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>API Development</h2>
+          <p>
+            I have a strong proficiency in designing and developing RESTful
+            APIs using PHP Laravel framework and Node.js. With Laravel, I
+            craft robust, scalable APIs that ensure data integrity and
+            security. In Node.js, I create real-time, high-performance APIs
+            for modern applications. My experience includes data validation,
+            authentication, and database integration. I excel in designing
+            APIs that serve as the backbone for web and mobile applications,
+            enabling efficient data exchange and communication between clients
+            and servers. My expertise in both PHP's Laravel and Node.js
+            empowers me to deliver API solutions that align with project
+            requirements and industry best practices.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----Portfolio section-->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="assets/work-1.png" alt="" />
+          <div class="layer">
+            <h3>Amazon Clone</h3>
+            <p>
+              I designed Amazon clone using HTML, CSS, Bootstrap and JavaScript.
+            </p>
+            <a href="#">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="assets/work-2.png" alt="" />
+          <div class="layer">
+            <h3>KBC Game - Using React Js.</h3>
+            <p>
+              I designed KBC Game using React js.
+            </p>
+            <a href="https://kbc-varale.vercel.app/" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="assets/work-3.png" alt="" />
+          <div class="layer">
+            <h3>Real Estate Web Application</h3>
+            <p>
+              I designed real-estate web application using React js.
+            </p>
+            <a href="#">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <i class="fa-solid fa-paper-plane"></i>
+            prathameshvarale02@gmail.com
+          </p>
+          <p><i class="fa-solid fa-square-phone"></i> 7996587986</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <a href="assets/my_cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" id="name" placeholder="Your Name" required />
+            <input type="email" name="Email" id="email" placeholder="Your email" required />
+            <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copy-right">
+      <p>
+        Copyright © 2023. Designed and Developed
+        <i class="fa-solid fa-heart"></i> by <span>Prathamesh Varale</span>
+      </p>
+    </div>
+  </div>
+
+  <!--Script for opening tabs-->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <!-- ----For menu open close---- -->
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+  <!-- ---SUbmit form data script--- -->
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyKO6DrE8ujuPSDXXAosSrcdN7Z0LZHRnIIpLsIiD2gaUVOrDPl62eLiIMqFVnViW_VBw/exec";
+    const form = document.forms["submit-to-google-sheet"];
+
+    const msg = document.getElementById("msg");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+</body>
+
+</html>
